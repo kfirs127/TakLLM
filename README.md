@@ -90,16 +90,10 @@ To use the OpenAI API in this project, you’ll need to obtain an API key from O
 
 ### Step4: Place Your XSD File
 To ensure the generated XML structure follows the correct format, you'll need to specify the path to your XML Schema Definition (XSD) file.
-
-1. Place your XSD file in a known directory.
-2. Open the `xml_generator.py` script.
-3. Locate the line where `xsd_file_path` is defined.
-4. Update the `xsd_file_path` variable with the full path to your XSD file. For example:
-   ```python
-   xsd_file_path = '/path/to/your_schema.xsd'  # Replace with your actual XSD path
+The latest Schema is attached to this git, once it update, it need to be updated as well in the code at the `xsd_file_path` variable.
 
 ## Run Example
-    python xml_generator.py give me a state that has a one-derived derviedFrom 1000 and a LOW value when the value is below 3.6, have a Normal value when between 3.6 and 5.2 and have a High value when is bigger from 5.2, name the Tak xml as Potassium_state
+    python tak_generator.py give me a state that has a one-derived derviedFrom 1000 and a LOW value when the value is below 3.6, have a Normal value when between 3.6 and 5.2 and have a High value when is bigger from 5.2, name the Tak xml as Potassium_state
 
 ## License
 This project is licensed under the MIT License.
